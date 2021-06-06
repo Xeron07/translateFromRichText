@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Xeron07/translateFromRichText/issues"
   },
-  "homepage": "https://github.com/Xeron07/translateFromRichText#readme"
+  "homepage": "https://github.com/Xeron07/translateFromRichText#readme",
+  "dependencies": {
+    "google-translate-open-api": "^1.3.7"
+  }
 }

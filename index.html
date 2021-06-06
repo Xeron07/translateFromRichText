@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translating</title>
+</head>
+<script type="javascript" src="./node_modules/google-translate-open-api/dist/" ></script>
+<body>
+    <input type="text" id="inputString"/>
+
+    <button onClick="translateU()">Translate</button>
+
+
+    <p id="output"></p>
+
+</body>
+
+<script  >
+    let inputVal="";
+     let translateU=async ()=>{
+         inputVal= document.getElementById("inputString").value;
+         fetch("https://microsoft-translator-text.p.rapidapi.com/BreakSentence?api-version=3.0", {
+	"method": "POST",
+	"headers": {
+		"content-type": "application/json",
+		"x-rapidapi-key": "decf92726fmsh1e71deabd583274p1e1764jsn5280b2c82105",
+		"x-rapidapi-host": "microsoft-translator-text.p.rapidapi.com"
+	},
+	"body": [
+		{
+			"Text": inputVal
+		}
+	]
+})
+.then(response => {
+	console.log(response);
+})
+.catch(err => {
+	console.error(err);
+});
+        
+    }
+
+   
+</script>
+
+
+</html>
