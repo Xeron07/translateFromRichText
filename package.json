@@ -1,0 +1,19 @@
+{
+  "name": "translatefromrichtext",
+  "version": "1.0.0",
+  "description": "translating text language to english",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Xeron07/translateFromRichText.git"
+  },
+  "author": "Md. Minhaz Uddin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Xeron07/translateFromRichText/issues"
+  },
+  "homepage": "https://github.com/Xeron07/translateFromRichText#readme"
+}
